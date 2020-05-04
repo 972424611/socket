@@ -9,7 +9,7 @@ public class Pool {
     public static ThreadPoolExecutor singleThreadPool;
 
     static {
-        threadPool = new ThreadPoolExecutor(0, Integer.MAX_VALUE,
+        threadPool = new ThreadPoolExecutor(0, 10,
                 60L, TimeUnit.SECONDS,
                 new SynchronousQueue<>());
 

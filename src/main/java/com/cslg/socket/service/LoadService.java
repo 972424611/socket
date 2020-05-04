@@ -56,7 +56,7 @@ public class LoadService extends AbstractService<Load> {
                 stringBuilder.append(data);
                 k++;
             }
-        }catch (SocketTimeoutException e) {
+        } catch (SocketTimeoutException e) {
             e.printStackTrace();
             logger.error("read()超时线程即将退出");
             return true;
